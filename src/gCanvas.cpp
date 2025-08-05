@@ -15,9 +15,9 @@ static uint32_t MakeRandomId() {
 	return ridg();
 }
 
-static constexpr bool isHost = true;
+static constexpr bool isHost = true; //true for host, false for clients
 static const char* bindIP = "0.0.0.0";
-static const char* serverIP = "192.168.1.102";
+static const char* serverIP = "YOUR_IP_HERE"; //enter your private IP address
 static constexpr uint16_t port = 25000;
 
 gCanvas::gCanvas(gApp* root) : gBaseCanvas(root) {
